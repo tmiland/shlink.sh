@@ -59,6 +59,9 @@ with [install](install) script
 curl -sSL https://tmiland.github.io/shlink.sh/install | bash
 ```
 
+- _You will be prompted for **API** key and **domain**, if not set in **.env** on first run_
+  - _A **.env** file will be created and sourced automatically._
+
 ## 📝 CHANGELOG
 All notable changes to this project will be documented in [this file](CHANGELOG.md).
 
