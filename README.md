@@ -6,7 +6,7 @@
 
 # shlink.sh
 
-Shorten url using shlink via REST API.
+Shorten url using [shlink](https://github.com/shlinkio/shlink) via REST API.
 
 ## 🔥 Usage
 
