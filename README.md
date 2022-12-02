@@ -31,6 +31,18 @@ Flags, options and parameters:
 > ./shlink.sh shorten
 # Shorten url using shlink via REST API
 ```
+or symlink
+run
+```bash
+ln -s ~/.shlink.sh/shlink.sh ~/.local/bin/shlink
+export PATH=$HOME/.local/bin:$PATH
+# Add to .bashrc / .zshrc
+```
+then
+```bash
+> shlink shorten
+# Shorten url using shlink via REST API
+```
 
 ![shlink.sh.gif](/assets/shlink.sh.gif)
 
@@ -41,6 +53,10 @@ with `git`
 ```bash
 git clone https://github.com/tmiland/shlink.sh.git $HOME/.shlink.sh
 cd $HOME/.shlink.sh
+```
+with [install](install) script
+```bash
+curl -sSL https://tmiland.github.io/shlink.sh/install | bash
 ```
 
 ## 📝 CHANGELOG
