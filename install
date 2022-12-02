@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC1091
+echo -e "\e[1mUSAGE: run install to install and install uninstall to uninstall.\e[0m"
+install_dir="${HOME}"/.shlink.sh
+install() {
+	if [[ ! -d  ${install_dir} ]]; then
+		mkdir -p "${install_dir}"
+		git clone https://github.com/tmiland/shlink.sh.git "${install_dir}"
+	fi
+	ln -sfn "${install_dir}"/shlink.sh ~/.local/bin/shlink
+	chmod +x "${install_dir}"/shlink.sh
+	export PATH=$HOME/.local/bin:$PATH
+}
+
+uninstall() {
+	rm -r ~/.local/bin/shlink
+	rm -rf "${install_dir}"
+}
+
+if [[ "$1" == "uninstall" ]]; then
+	uninstall
+else
+	install
+fi
