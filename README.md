@@ -1,4 +1,3 @@
-![bash_unit CI](https://github.com/tmiland/shlink.sh/workflows/bash_unit%20CI/badge.svg)
 ![Shellcheck CI](https://github.com/tmiland/shlink.sh/workflows/Shellcheck%20CI/badge.svg)
 ![GH Language](https://img.shields.io/github/languages/top/tmiland/shlink.sh)
 ![GH stars](https://img.shields.io/github/stars/tmiland/shlink.sh)
