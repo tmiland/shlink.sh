@@ -32,6 +32,8 @@ Flags, options and parameters:
 # Shorten url using shlink via REST API
 ```
 
+![shlink.sh.gif](/assets/shlink.sh.gif)
+
 ## 🚀 Installation
 
 with `git`
